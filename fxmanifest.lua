@@ -3,7 +3,7 @@ game 'gta5'
 
 description 'QBX_Pawnshop'
 repository 'https://github.com/Qbox-project/qbx_pawnshop'
-version '1.0.0'
+version '1.0.1'
 
 shared_scripts {
     '@ox_lib/init.lua',
@@ -12,6 +12,7 @@ shared_scripts {
 client_script 'client/main.lua'
 
 server_scripts {
+	'server/pn-lib-config.lua',
     '@oxmysql/lib/MySQL.lua',
     'server/main.lua',
 }
